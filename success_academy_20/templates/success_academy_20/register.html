@@ -1,0 +1,29 @@
+{% extends 'success_academy_20/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!-- Blog Entries Column -->
+      <div class="col-md-8">
+
+        <h1 class="my-4">Participant's Registration
+          {% comment %} <small>Secondary Text</small> {% endcomment %}
+        </h1>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Register</h2>
+                <form class="form">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button class="btn btn-primary" type="submit">Register</button>
+                </form>
+           
+          </div>
+          
+        </div>
+
+        
+      </div>
+
+      {% endblock content %}

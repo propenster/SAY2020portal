@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'montserrat', sans-serif;
+}
+
+.nav{
+  font-size: 14px;
+  padding: 10px;
+}
+
+header.jumbotron{
+  padding: 5px;
+  line-height: 0.2vh;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 960px;
+  background-color: purple;
+  font-size: 14px;
+  font-weight: 300;
+}
